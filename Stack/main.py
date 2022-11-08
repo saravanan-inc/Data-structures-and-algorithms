@@ -1,11 +1,18 @@
-"""
-Stack Data Structure
-FILO
-Push, Pop, isEmpty, isFull, Peek
-"""
+'''
+    1. Start
+    2. Initialize 
+        top = -1
+    3. Push
+        Increment Top
+        array[top] = value
+    4. Pop
+        temp = array[top]
+        top -= 1
+        return temp
+'''
 
 
-class Stack():
+class Stack:
     def __init__(self):
         self.stack = []
 
@@ -15,23 +22,10 @@ class Stack():
     def pop(self):
         self.stack.pop()
 
-    def peek(self):
-        print(self.stack)
-
 
 s = Stack()
-
-# Pop
 s.push(1)
-s.push(2)
-s.push(3)
-s.push(4)
-s.push(5)
-
-s.peek()
+print(s.stack)
 
 s.pop()
-s.pop()
-s.pop()
-
-s.peek()
+print(s.stack)
